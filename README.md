@@ -20,11 +20,17 @@ Esta aplicación web interactiva permite explorar y visualizar datos de anuncios
    ```bash
    git clone https://github.com/tu_usuario/car-dashboard.git
 
-2. **Instalar dependencias:** Ejecuta el siguente comando para instalar los paquetes necesarios: pip install -r requirements.txt
-Ejecutar la aplicación: Inicia la aplicación con:
-streamlit run app.py
-Explorar datos: Utiliza el menú interactivo para seleccionar columnas y generar visualizaciones.
-Requisitos:
+2. **Instalar dependencias:** Ejecuta el siguente comando para instalar los paquetes necesarios:
+   ```bash
+   pip install -r requirements.txt
+
+3. **Ejecutar la aplicación: Inicia la aplicación con:
+   ```bash
+   streamlit run app.py
+
+**Explorar datos: Utiliza el menú interactivo para seleccionar columnas y generar visualizaciones.**
+
+**Requisitos:**
 
 Python 3.x
 Paquetes: pandas, plotly-express, streamlit.
@@ -40,6 +46,6 @@ La aplicación está desplegada y accesible en el siguiente enlace:
 
 [Explorar la aplicación en Render](https://car-dashboard-os1l.onrender.com)
 
-Autor
-[Alejandra Frías]
+**Autor**
+**[Alejandra Frías]**
 [kharyfrias@gmail.com]
