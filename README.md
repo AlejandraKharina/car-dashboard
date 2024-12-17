@@ -1,51 +1,96 @@
-# Explorador Interactivo de Datos de Anuncios de Venta de Coches
+# 🚗 **Explorador Interactivo de Datos de Anuncios de Venta de Coches**
 
-**Descripción:**
+**Descripción:**  
+Esta aplicación web interactiva permite explorar, filtrar y visualizar datos de anuncios de venta de coches de manera dinámica y fácil de usar. Desarrollada con **Streamlit** y **Plotly**, ofrece gráficos intuitivos, métricas clave y la opción de descargar los datos filtrados para análisis adicionales.
 
-Esta aplicación web interactiva permite explorar y visualizar datos de anuncios de venta de coches de manera sencilla e intuitiva. Utiliza Streamlit y Plotly para generar gráficos dinámicos que facilitan la comprensión de los datos.
+---
 
-**Funcionalidades:**
+## **📊 Funcionalidades Principales**
 
-- **Carga de datos:** Utiliza un archivo CSV (por defecto `vehicles_us.csv`) para analizar anuncios de venta de coches.
-- **Selección de columnas:** Permite al usuario seleccionar las columnas del dataset para crear visualizaciones personalizadas.
-- **Tipos de gráficos:**
-  - **Histogramas:** Distribución de datos basada en columnas seleccionadas.
-  - **Gráficos de dispersión:** Relación entre dos columnas seleccionadas.
-- **Interactividad:** Personalización de los gráficos mediante opciones dinámicas en la interfaz.
-- **Gestión de errores:** Muestra mensajes claros si los datos no están disponibles o hay problemas de carga.
+1. **Filtros Interactivos**  
+   - Filtra los datos por **rango de precios** y **kilometraje** utilizando controles deslizantes intuitivos.  
+   - Analiza solo la información relevante para tus necesidades.
 
-**Cómo usar:**
+2. **Indicadores Clave (KPIs)**  
+   - Muestra un resumen rápido con:  
+     - **Total de vehículos** disponibles.  
+     - **Precio promedio** de los vehículos.  
+     - **Kilometraje promedio** de los anuncios filtrados.  
 
-1. **Clonar el repositorio:** Descarga el código fuente de este proyecto:
-   ```bash
-   git clone https://github.com/tu_usuario/car-dashboard.git
+3. **Visualizaciones Dinámicas**  
+   - **Histogramas**: Distribución de cualquier columna seleccionada (ej. precios, kilometraje).  
+   - **Gráficos de dispersión**: Relación entre dos columnas seleccionadas (ej. precio vs kilometraje).  
+   - **Tendencia de precios**: Gráfico de líneas que muestra cómo varía el precio promedio a lo largo del tiempo (por año de fabricación).
 
-2. **Instalar dependencias:** Ejecuta el siguente comando para instalar los paquetes necesarios:
-   ```bash
-   pip install -r requirements.txt
+4. **Resumen Estadístico**  
+   - Genera un análisis estadístico rápido con métricas como promedio, desviación estándar, mínimos y máximos.
 
-3. **Ejecutar la aplicación: Inicia la aplicación con:
-   ```bash
-   streamlit run app.py
+5. **Descarga de Datos**  
+   - Exporta los datos filtrados en **formato CSV** para realizar análisis adicionales fuera de la aplicación.
 
-**Explorar datos: Utiliza el menú interactivo para seleccionar columnas y generar visualizaciones.**
+6. **Interpretación Automática de Resultados**  
+   - Muestra un breve texto interpretativo sobre los gráficos seleccionados para facilitar la comprensión de los resultados.
 
-**Requisitos:**
+---
 
-Python 3.x
-Paquetes: pandas, plotly-express, streamlit.
+## **⚙️ Cómo Usar la Aplicación**
 
-Contribuciones:
+### 1. **Clonar el repositorio**  
+Descarga el código fuente de este proyecto:  
+```bash
+git clone https://github.com/tu_usuario/car-dashboard.git
+cd car-dashboard
+```
 
-¡Las contribuciones son bienvenidas! Si encuentras errores, tienes ideas para mejorar la funcionalidad o deseas agregar características nuevas, por favor abre un issue o crea un pull request.
+### 2. **Instalar dependencias**  
+Ejecuta el siguiente comando para instalar los paquetes necesarios:  
+```bash
+pip install -r requirements.txt
+```
 
+### 3. **Ejecutar la aplicación**  
+Inicia la aplicación localmente:  
+```bash
+streamlit run app.py
+```
 
-## Aplicación en línea
+### 4. **Explorar los datos**  
+Utiliza el menú interactivo para:  
+- Aplicar filtros de precios y kilometraje.  
+- Seleccionar columnas para generar histogramas o gráficos de dispersión.  
+- Visualizar tendencias de precios a lo largo del tiempo.  
+- Exportar los datos filtrados.  
 
-La aplicación está desplegada y accesible en el siguiente enlace:
+---
 
-[Explorar la aplicación en Render](https://car-dashboard-os1l.onrender.com)
+## **📋 Requisitos**
 
-**Autor**
-**[Alejandra Frías]**
-[kharyfrias@gmail.com]
+- **Python 3.x**  
+- **Paquetes**:  
+   - Streamlit  
+   - Plotly Express  
+   - Pandas  
+
+---
+
+## **🌐 Aplicación en Línea**
+
+Puedes acceder a la versión desplegada de la aplicación en el siguiente enlace:  
+
+🔗 **[Explorar la Aplicación en Render](https://car-dashboard-os1l.onrender.com)**
+
+---
+
+## **🤝 Contribuciones**
+
+¡Las contribuciones son bienvenidas! 🎉  
+Si encuentras errores, tienes ideas para mejorar la funcionalidad o deseas agregar nuevas características:  
+- Abre un **issue**.  
+- Envía un **pull request**.  
+
+---
+
+## **👩‍💻 Autor**
+
+**Alejandra Frías**  
+📧 **[kharyfrias@gmail.com](mailto:kharyfrias@gmail.com)**  
