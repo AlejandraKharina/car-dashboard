@@ -17,7 +17,7 @@ else:
     st.markdown(
         """
         Esta aplicación permite explorar datos de anuncios de venta de coches mediante visualizaciones interactivas.
-        Utiliza los filtros y gráficos a continuación para analizar la información.
+        Utiliza filtros y gráficos para analizar las tendencias.
         """
     )
 
@@ -79,19 +79,19 @@ else:
         st.write("### Interpretación:")
         if x_col == "odometer" and y_col == "price":
             st.info("Este gráfico muestra la relación entre el kilometraje y el precio. Generalmente, los coches con mayor kilometraje tienen precios más bajos.")
-        elif x_col == "year" and y_col == "price":
-            st.info("Este gráfico muestra la relación entre el año de fabricación y el precio. Es probable que los coches más nuevos tengan precios más altos.")
+        elif x_col == "model_year" and y_col == "price":
+            st.info("Este gráfico muestra la relación entre el año del modelo y el precio. Es probable que los coches más nuevos tengan precios más altos.")
         else:
             st.info(f"Este gráfico muestra la relación entre **{x_col}** y **{y_col}**. Observa si existe alguna tendencia o patrón interesante.")
 
     elif visualization == "Tendencia de Precios":
-        if "year" in filtered_data.columns:
+        if "model_year" in filtered_data.columns:
             st.write("### Tendencia de Precios a lo Largo del Tiempo")
-            avg_price_per_year = filtered_data.groupby("year")["price"].mean().reset_index()
-            fig_line = px.line(avg_price_per_year, x="year", y="price", title="Precio Promedio por Año")
+            avg_price_per_year = filtered_data.groupby("model_year")["price"].mean().reset_index()
+            fig_line = px.line(avg_price_per_year, x="model_year", y="price", title="Precio Promedio por Año del Modelo")
             st.plotly_chart(fig_line)
         else:
-            st.warning("No se encontró la columna 'year' en los datos. No se puede generar la tendencia de precios.")
+            st.warning("No se encontró la columna 'model_year' en los datos. No se puede generar la tendencia de precios.")
 
     # Resumen Estadístico
     st.write("### Resumen Estadístico")
